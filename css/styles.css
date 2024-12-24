@@ -109,8 +109,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    /* justify-content: space-between; */
-    /* margin-right: 5px; */
 }
 
 .header__options {
@@ -141,8 +139,6 @@
     visibility: visible;
   }
 
-
-
 .header__options > .option__icon {
     cursor: pointer;
 }
@@ -152,14 +148,6 @@
     position: relative;
 
 }
-
-/* .header__options:hover {
-    background-color: #eff2f5;
-    border-radius: 50px;
-    align-items: center;
-    padding: 10px 30px;
-  } */
-
 
 .header__options .fa-house::after {
     content: "";
@@ -171,8 +159,6 @@
     position: absolute;
  
 } 
-
-
 
 .header__option .tooltiptext {
     visibility: hidden;
@@ -189,10 +175,6 @@
     z-index: 1;
 }
 
-
-
-
-
 .right__icons {
     padding: 0px 10px;
     cursor: pointer;
@@ -205,16 +187,6 @@
     padding: 0 10px;
     cursor: pointer;
 }
-
-/* .header__info > i {
-    margin-right: 10px;
-
-} */
-
-
-
-
-
 
 .header__right > .header__options > .menu, .fa-facebook-messenger, .fa-bell, .fa-user {
     background-color: #eff2f5;
@@ -230,9 +202,7 @@
     margin-top: 2px;
 }
 
-.header__options > span {
-    
-}
+
 
 
 
@@ -252,6 +222,3 @@
     background-color: #ccc;
 }
 
-/* .header__options > .menu, .fa-facebook-messenger, .fa-bell, .fa-bell {
-    margin-right: 10px;
-} */
