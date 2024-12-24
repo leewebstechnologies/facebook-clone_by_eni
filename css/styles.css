@@ -1,26 +1,257 @@
 .header {
     display: flex;
-    padding: 15px 20px;
+    padding: 15px 10px;
     justify-content: space-between;
     background-color: #fff;
     position: sticky;
     z-index: 100;
     top: 0;
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    height: 30px;
 }
 
 .header__left {
     display: flex;
+    align-items: center;
+  justify-content: center;
 }
 
 .header__left > .logo {
-    max-height: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header__input {
+   display: flex;
+   align-items: center;
+   background-color: #eff2f5;
+   border-radius: 999px;
+   margin: 10px;
+   padding: 10px; 
+}
+
+.header__input > input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
 }
 
 .search {
     height: 15px;
 }
 
-.header__right > .menu {
-    height: 20px;
+.header__center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
+
+
+.header__option {
+    color: gray;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    position: relative;
+}
+
+.header__option .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    top: 40px;
+    margin-left: -70px;
+    padding: 5px 0;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__option:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+.header__option > .option__icon {
+    cursor: pointer;
+}
+
+.header__option .active {
+    color: #2e81f4;
+    position: relative;
+
+}
+
+.header__option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+
+.header__option .fa-house::after {
+    content: "";
+    background-color: #2e81f4;
+    width: 5rem;
+    height: 2px;
+    bottom: -22px;
+    right: -25px;
+    position: absolute;
+ 
+} 
+
+.header__right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: space-between; */
+    /* margin-right: 5px; */
+}
+
+.header__options {
+    color: gray;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    position: relative;
+}
+
+
+.header__options .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    top: 40px;
+    margin-left: -70px;
+    padding: 5px 0;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__options:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+.header__options > .option__icon {
+    cursor: pointer;
+}
+
+.header__options .active {
+    color: #2e81f4;
+    position: relative;
+
+}
+
+/* .header__options:hover {
+    background-color: #eff2f5;
+    border-radius: 50px;
+    align-items: center;
+    padding: 10px 30px;
+  } */
+
+
+.header__options .fa-house::after {
+    content: "";
+    background-color: #2e81f4;
+    width: 5rem;
+    height: 2px;
+    bottom: -22px;
+    right: -25px;
+    position: absolute;
+ 
+} 
+
+
+
+.header__option .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    top: 40px;
+    margin-left: -70px;
+    padding: 5px 0;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+
+.right__icons {
+    padding: 0px 10px;
+    cursor: pointer;
+  
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* .header__info > i {
+    margin-right: 10px;
+
+} */
+
+
+
+
+
+
+.header__right > .header__options > .menu, .fa-facebook-messenger, .fa-bell, .fa-user {
+    background-color: #eff2f5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.header__options > span {
+    
+}
+
+
+
+
+.header__right .menu::after {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #010101;
+    color: #fff;
+}
+
+.header__right .menu:hover {
+    background-color: #ccc;
+}
+
+.header__right > .right__icons:hover {
+    background-color: #ccc;
+}
+
+/* .header__options > .menu, .fa-facebook-messenger, .fa-bell, .fa-bell {
+    margin-right: 10px;
+} */
