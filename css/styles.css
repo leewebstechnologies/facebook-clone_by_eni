@@ -114,7 +114,7 @@
 .header__options {
     color: gray;
     display: flex;
-    padding: 0 30px;
+    padding: 0 10px;
     align-items: center;
     position: relative;
 }
@@ -137,6 +137,7 @@
 
 .header__options:hover .tooltiptext {
     visibility: visible;
+    margin-top: 15px;
   }
 
 .header__options > .option__icon {
@@ -175,18 +176,18 @@
     z-index: 1;
 }
 
-.right__icons {
+/* .right__icons {
     padding: 0px 10px;
     cursor: pointer;
   
-}
+} */
 
-.header__info {
+/* .header__info {
     display: flex;
     align-items: center;
     padding: 0 10px;
     cursor: pointer;
-}
+} */
 
 .header__right > .header__options > .menu, .fa-facebook-messenger, .fa-bell, .fa-user {
     background-color: #eff2f5;
@@ -218,7 +219,73 @@
     background-color: #ccc;
 }
 
-.header__right > .right__icons:hover {
+/* .header__right > .right__icons:hover {
     background-color: #ccc;
+} */
+
+.app__body {
+    display: flex;
+}
+
+.sidebar {
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;      
+    flex: 0.33;
+    padding: 25px 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+}
+
+.sidebar__Row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar__Row img {
+    width: 40px;
+}
+
+.sidebar__Row:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.sidebar__Row > h4 {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.feed {
+    flex: 0.34;
+}
+
+.widget {
+    flex: 0.33;
+}
+
+
+.fa-solid {
+    border: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #e2e5e9;
+}
+
+.sidebar__Row button {
+    border: none;
 }
 
